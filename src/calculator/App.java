@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Calculator c = new Calculator();
-        String operator, exit = "";
+        String operator, select = "";
         int num1, num2;
 
 
 
         Scanner sc = new Scanner(System.in);
-        while (!exit.equals("exit")) {
+        while (!select.equals("exit")) {
             System.out.print("첫번째 양의 정수를 입력해주세요 : ");
             num1 = sc.nextInt();
             System.out.print("두번째 양의 정수를 입력해주세요 ");
@@ -21,10 +21,18 @@ public class App {
 
             c.setData(num1, num2, operator);
             c.result();
+            c.calculate();
 
-            System.out.print("더 계산하시겠습니까? (exit 입력 시 종료) : ");
-            exit = sc.next();
+            System.out.print("더 계산하시겠습니까? ('exit' 입력 시 종료, 'list' 입력 시 히스토리 보기) : ");
+            select = sc.next();
+            if(select.equals("list")) {
+                c.resultList();
+                System.out.println("");
+                continue;
+            }
+
         }
+        c.removeResult();
 
     }
 
