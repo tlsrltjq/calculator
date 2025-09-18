@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Calculator {
+    //속성
     private String operator, exit = "";
     private int num1, num2;
     private double result = 0;
@@ -11,10 +12,9 @@ public class Calculator {
 
 
 
-    Calculator() {
+    Calculator() { //생성자
         System.out.println("계산기");
     }
-
 
     public void calculate() {
         numbers.add(result);
@@ -24,7 +24,7 @@ public class Calculator {
         numbers.clear();
     }
 
-    //결과 출력
+    //히스토리 list로 출력
     public void resultList(){
         for (double numbers : numbers) {
             System.out.print(numbers + " "); // 각 요소를 한 줄씩 출력
