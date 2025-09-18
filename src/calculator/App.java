@@ -23,7 +23,7 @@ public class App {
             c.result();
             c.calculate();
 
-            System.out.print("더 계산하시겠습니까? ('exit' 입력 시 종료, 'list' 입력 시 히스토리 보기) : ");
+            System.out.print("더 계산하시겠습니까? ('exit' 입력 시 종료, 'list' 입력 시 히스토리 보기) : "); //a
             select = sc.next();
             if(select.equals("list")) {
                 c.resultList();

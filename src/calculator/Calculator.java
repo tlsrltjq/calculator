@@ -24,6 +24,7 @@ public class Calculator {
         numbers.clear();
     }
 
+    //결과 출력
     public void resultList(){
         for (double numbers : numbers) {
             System.out.print(numbers + " "); // 각 요소를 한 줄씩 출력
