@@ -12,7 +12,7 @@ public class App {
         while (!select.equals("exit")) {
             System.out.print("첫번째 양의 정수를 입력해주세요 : ");
             num1 = sc.nextInt();
-            System.out.print("두번째 양의 정수를 입력해주세요 ");
+            System.out.print("두번째 양의 정수를 입력해주세요 : ");
             num2 = sc.nextInt();
             System.out.print("사칙연산 기호를 입력해주세요(+,-,*,/) : ");
             operator = sc.next();
@@ -33,7 +33,7 @@ public class App {
 
         }
 
-
+    sc.close();
     }
 
 
