@@ -20,6 +20,7 @@ public class App {
             c.setData(num1, num2, operator); //데이터 세팅
             c.result(); //연산하기
             c.calculate(); //list에 저장
+            c.removeResult(); //리스트 내용 제거
 
             System.out.print("더 계산하시겠습니까? ('exit' 입력 시 종료, 'list' 입력 시 히스토리 보기) : ");
             select = sc.next();
@@ -31,7 +32,7 @@ public class App {
             }
 
         }
-        c.removeResult(); //리스트 내용 제거
+
 
     }
 
